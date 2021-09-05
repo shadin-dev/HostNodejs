@@ -4,11 +4,7 @@ const app = express();
 const port = 7000;
 
 app.get("/", (req, res) => {
-  res.json({
-    title: "test",
-    description: "test",
-    statusCode: "success",
-  });
+  res.json(require("./data.json"));
 });
 
 app.listen("7000", () => {
